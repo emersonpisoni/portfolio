@@ -1,0 +1,33 @@
+@mixin header() {
+  position: fixed;
+  top: 100px;
+  transition: all 0.5s;
+
+}
+
+.description {
+  position: relative;
+
+  .text {
+    @include header;
+    left: 220px;
+
+    p:first-child {
+      font-size: 90px;
+    }
+
+    +p {
+      font-size: 20px;
+    }
+
+  }
+
+  .image {
+    @include header;
+
+    width: 200px;
+    border-radius: 50%;
+    border: 4px solid black;
+    right: 220px;
+  }
+}
