@@ -1,6 +1,6 @@
 import React, { LegacyRef, useEffect, useLayoutEffect, useRef } from 'react'
 import "./Description.scss"
-import emersonImage from '../assets/emerson.jpg'
+import emersonImage from '../../assets/emerson.jpg'
 
 export function Description() {
   const imageRef = useRef<HTMLImageElement>(null)

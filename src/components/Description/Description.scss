@@ -6,11 +6,18 @@
 }
 
 .description {
-  position: relative;
+  // position: relative;
+  transform: rotate(90deg);
+  transform-origin: right top;
+  // height: 100vw;
+  width: 500px;
+  height: 500px;
+
+  border: 1px solid blue;
 
   .text {
-    @include header;
-    left: 220px;
+    // @include header;
+    // left: 220px;
 
     p:first-child {
       font-size: 90px;
@@ -23,7 +30,7 @@
   }
 
   .image {
-    @include header;
+    // @include header;
 
     width: 200px;
     border-radius: 50%;

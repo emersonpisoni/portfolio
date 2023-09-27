@@ -8,13 +8,41 @@ html {
     color: white;
     font-weight: bold;
   }
+
   font-family: monospace;
-  background-color:  rgb(64, 33, 91);
+  background-color: rgb(64, 33, 91);
 }
 
 .App {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // flex-direction: column;
+  // align-items: center;
+  // position: relative;
 }
 
+.content-horizontal {
+  margin: 32px;
+  height: 90vw;
+  width: 90vh;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: rotate(270deg) translateY(-42vw);
+  transform-origin: right top;
+  background-color: aquamarine;
+  position: absolute;
+}
+
+$scrollBarHeight: 1px;
+
+::-webkit-scrollbar {
+  width: $scrollBarHeight;
+  height: $scrollBarHeight;
+}
+
+::-webkit-scrollbar-button {
+  width: $scrollBarHeight;
+  height: $scrollBarHeight;
+}

@@ -1,0 +1,11 @@
+.summary {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: black;
+  height: 100vh;
+  padding: 100px;
+  filter: drop-shadow(5px 2px 13px black);
+}
