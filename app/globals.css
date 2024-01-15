@@ -16,6 +16,12 @@
   }
 }
 
+@layer utilities {
+  .clip-path-pc-base {
+    clip-path: polygon(22% 63%, 79% 62%, 100% 100%, 0% 100%);
+  }
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
