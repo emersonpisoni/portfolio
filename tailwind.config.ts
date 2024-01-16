@@ -15,12 +15,17 @@ const config: Config = {
         'space': "url('/images/space.jpg')"
       },
       animation: {
-        zoom: 'zoom 31s ease-in-out infinite'
+        zoom: 'zoom 2s cubic-bezier(0.65, 0.05, 0.36, 1) 1',
+        blur: 'blur 2s cubic-bezier(0.65, 0.05, 0.36, 1) 1'
       },
       keyframes: {
         zoom: {
-          '0%, 100%': { transform: 'scale(3)' },
-          '50%': { transform: 'scale(1)' }
+          '0%': { transform: 'scale(.5)' },
+          '100%': { transform: 'scale(.8)' }
+        },
+        blur: {
+          '0%': { filter: 'blur(8px)' },
+          '100%': { filter: 'blur(0)' }
         }
       },
     },
