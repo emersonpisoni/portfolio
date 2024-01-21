@@ -15,7 +15,7 @@ export default function Computer() {
           <Button>Projetos</Button>
         </div>
       </div >
-      <div className='w-2 h-4 bg-red-600 -bottom-0 right-10 absolute rounded-full'></div>
+      <div className='w-2 h-4 bg-green-500 -bottom-0 right-10 absolute rounded-full'></div>
       <div className='w-2 h-3 bg-white -bottom-0 right-16 absolute rounded-full'></div>
       <div className='w-2 h-3 bg-white -bottom-0 right-20 absolute rounded-full'></div>
       <div className='w-2 h-3 bg-white -bottom-0 right-24 absolute rounded-full'></div>
