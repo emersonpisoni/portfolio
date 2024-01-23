@@ -17,8 +17,8 @@ export default function Computer() {
       </div >
       <div className='w-2 h-4 bg-green-500 -bottom-0 right-10 absolute rounded-full'></div>
       <div className='w-2 h-3 bg-white -bottom-0 right-16 absolute rounded-full'></div>
-      <div className='w-2 h-3 bg-white -bottom-0 right-24 absolute rounded-full'></div>
       <div className='w-2 h-3 bg-white -bottom-0 right-20 absolute rounded-full'></div>
+      <div className='w-2 h-3 bg-white -bottom-0 right-24 absolute rounded-full'></div>
       <div className='w-1/4 h-40 bg-slate-100 -bottom-8 absolute clip-path-pc-base -z-10'></div>
     </div >
   )
