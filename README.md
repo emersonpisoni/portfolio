@@ -1,4 +1,4 @@
-portfólio com Next JS
+portfólio com Next
 Tailwind
 React Query
 Cypress
