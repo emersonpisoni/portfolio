@@ -21,7 +21,7 @@ const config: Config = {
       keyframes: {
         zoom: {
           '0%': { transform: 'scale(.5)' },
-          '100%': { transform: 'scale(.95)' }
+          '100%': { transform: 'scale(.9)' }
         },
         blur: {
           '0%': { filter: 'blur(8px)' },
