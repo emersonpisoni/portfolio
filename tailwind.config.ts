@@ -4,6 +4,7 @@ const config: Config = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './sections/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
@@ -21,7 +22,7 @@ const config: Config = {
       keyframes: {
         zoom: {
           '0%': { transform: 'scale(.5)' },
-          '100%': { transform: 'scale(.90)' }
+          '100%': { transform: 'scale(.909)' }
         },
         blur: {
           '0%': { filter: 'blur(8px)' },
