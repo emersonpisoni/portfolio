@@ -1,7 +1,7 @@
 import About from "@/sections/about.section";
 import Header from "./header.component";
-import Skills from "@/sections/skills.section";
 import Projects from "@/sections/projects.section";
+import Experience from "@/sections/experience.section";
 
 export default function Computer() {
   return (
@@ -12,7 +12,7 @@ export default function Computer() {
         </div>
         <div className="overflow-auto flex flex-col w-full">
           <About />
-          <Skills />
+          <Experience />
           <Projects />
         </div>
       </div >
