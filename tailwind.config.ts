@@ -13,14 +13,12 @@ const config: Config = {
         mono: ["var(--font-roboto-mono)"],
       },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'space': "url('/images/space.jpg')"
+        'space': "url('/images/space.jpg')",
       },
       animation: {
         zoom: 'zoom 2s cubic-bezier(0.65, 0.05, 0.36, 1) 1',
-        blur: 'blur 2s cubic-bezier(0.65, 0.05, 0.36, 1) 1'
+        blur: 'blur 2s cubic-bezier(0.65, 0.05, 0.36, 1) 1',
+        'bg-animate': 'bg-animate 10s infinite'
       },
       keyframes: {
         zoom: {
@@ -30,6 +28,11 @@ const config: Config = {
         blur: {
           '0%': { filter: 'blur(8px)' },
           '100%': { filter: 'blur(0)' }
+        },
+        'bg-animate': {
+          '0%': { 'background-position': '0% 50%', 'background-size': '400% 400%', },
+          '50%': { 'background-position': '100% 50%', 'background-size': '400% 400%', },
+          '100%': { 'background-position': '0% 50%', 'background-size': '400% 400%', }
         }
       },
     },

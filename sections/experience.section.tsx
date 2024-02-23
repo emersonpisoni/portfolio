@@ -61,13 +61,13 @@ export default function Experience() {
         </ExperienceDivider>
         <ExperienceDivider date='Set 2018 - Dez 2018' company='CWI Software' role='Projeto Crescer'>
           <ul className="list-disc">
-            <p className='py-2'>Participei de um projeto de capacitação de desenvolvedores onde passei 3 meses estudando na empresa, com um total de 30 pessoas:</p>
+            <div className='py-2'>Participei de um projeto de capacitação de desenvolvedores onde passei 3 meses estudando na empresa, com um total de 30 pessoas:</div>
 
             <li> Aprendi tecnologias e conceitos como POO, Banco de Dados, JavaScript, React, Java entre outros.</li>
             <li> Entreguei aplicações todas as semanas durante 3 meses, como (Rede Social, Pokedex, Uber-like).</li>
             <li> Participei de grupos com 3 pessoas diferentes todas as semanas.</li>
 
-            <p className='py-2'>Como projeto final, onde eu e mais 3 colegas, desenvolvemos um jogo em ReactJS e Java, com detecção de movimentos por câmera chamado (Hole in the wall), onde o jogador tinha que fazer uma certa posição com o corpo para poder passar pelo obstáculo que estava vindo até ele.</p>
+            <div className='py-2'>Como projeto final, onde eu e mais 3 colegas, desenvolvemos um jogo em ReactJS e Java, com detecção de movimentos por câmera chamado (Hole in the wall), onde o jogador tinha que fazer uma certa posição com o corpo para poder passar pelo obstáculo que estava vindo até ele.</div>
 
             <li> Gerenciei e liderei a parte de frontend do projeto.</li>
             <li> Implementei leitura de movimentos por câmera (segue imagens abaixo).</li>
