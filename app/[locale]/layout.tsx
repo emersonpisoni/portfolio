@@ -14,7 +14,6 @@ const robotoMono = Roboto_Mono({
   variable: '--font-roboto-mono'
 })
 
-
 export default function RootLayout({
   children,
   params: { locale }
