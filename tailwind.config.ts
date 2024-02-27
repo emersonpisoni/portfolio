@@ -9,9 +9,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        mono: ["var(--font-roboto-mono)"],
-      },
       backgroundImage: {
         'space': "url('/images/space.jpg')",
       },
@@ -24,6 +21,7 @@ const config: Config = {
         'turning-on': 'turning-on .3s linear forwards',
         'turning-on-opacity': 'turning-on-opacity .3s .3s linear forwards',
         'delayed-turning-on-opacity': 'turning-on-opacity .3s 2.3s linear forwards',
+        'border-gradient': 'border-gradient 10s linear infinite'
       },
       keyframes: {
         zoom: {
@@ -85,6 +83,11 @@ const config: Config = {
             opacity: '1'
           },
         },
+        "border-gradient": {
+          'to': {
+            "--angle": "360deg"
+          }
+        }
       },
     },
 
