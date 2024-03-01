@@ -19,14 +19,14 @@ export default function Computer() {
 
   return (
     <div className='animate-zoom w-screen h-screen scale-[0.909] relative flex justify-center items-center'>
-      <div className="overflow-auto flex  relative w-screen h-screen items-start bg-black border-[24px] border-black rounded shadow-lg">
-        <div className={`${opacityAnimationClassname} flex items-center justify-center w-[calc(100vw-48px)] h-[calc(100vh-48px)] fixed z-10 bg-black`}>
+      <div className="overflow-auto flex relative w-screen h-screen items-start bg-black border-[24px] border-black rounded shadow-lg">
+        <div className={`${opacityAnimationClassname} flex items-center justify-center w-[calc(100vw-48px)] h-[calc(100vh-48px)] fixed z-20 bg-black`}>
           <div className={`${turnOnOffAnimationClassname} bg-white`}></div>
         </div>
-        <div className="h-full sticky top-0">
+        <div className="fixed top-[23px] left-[24px] right-[30px] z-10">
           <Header />
         </div>
-        <div className="overflow-auto flex flex-col w-full">
+        <div className="flex flex-col w-full">
           <About />
           <Experience />
           <Projects />

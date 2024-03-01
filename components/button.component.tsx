@@ -13,5 +13,5 @@ export default function Button({ children, id }: IButton) {
     element?.scrollIntoView({ behavior: 'smooth' })
   }
 
-  return <button onClick={scrollTo} className="h-full w-full font-bold bg-gradient-to-br from-violet-700 to-violet-950  filter hover:hue-rotate-15 p-8 ">{children}</button>
+  return <button onClick={scrollTo} className="font-bold transition hover:bg-purple-600 p-4 text-xl">{children}</button>
 }
