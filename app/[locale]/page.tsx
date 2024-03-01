@@ -7,7 +7,7 @@ import Link from 'next/link';
 export default function Index() {
   const t = useTranslations('index');
 
-  return <main className="bg-gradient-to-br from-sky-500 via-purple-500 to-orange-500 animate-bg-animate flex min-h-screen flex-col relative z-0 items-center justify-cente overflow-hidden">
+  return <main className="bg-gradient-to-br from-sky-500 via-purple-500 to-orange-500 animate-bg-animate flex min-h-dvh flex-col relative z-0 items-center justify-cente overflow-hidden">
     <Computer />
     <div className='flex top-1 right-1 absolute '>
       {t('switch') !== 'pt-BR' ? <Link locale={'en'} href={'/en'} className='rounded-full bg-white text-black font-bold'>
