@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
+  mode: 'jit',
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -21,7 +22,8 @@ const config: Config = {
         'turning-on': 'turning-on .3s linear forwards',
         'turning-on-opacity': 'turning-on-opacity .3s .3s linear forwards',
         'delayed-turning-on-opacity': 'turning-on-opacity .3s 2.3s linear forwards',
-        'border-gradient': 'border-gradient 10s linear infinite'
+        'border-gradient': 'border-gradient 10s linear infinite',
+        'typing': 'typing 3.5s steps(40, end) 2.3s, blink-caret 2s step-end infinite',
       },
       keyframes: {
         zoom: {
@@ -87,7 +89,18 @@ const config: Config = {
           'to': {
             "--angle": "360deg"
           }
-        }
+        },
+        "typing": {
+          'from': { 'width': '0' },
+          'to': { 'width': '100%' }
+        },
+        'blink-caret': {
+          '0%': { 'border-color': 'transparent' },
+          '25%': { 'border-color': 'blue' },
+          '50%': { 'border-color': 'transparent' },
+          '75%': { 'border-color': 'orange' },
+          '100%': { 'border-color': 'transparent' },
+        },
       },
     },
 
