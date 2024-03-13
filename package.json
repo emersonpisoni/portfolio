@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "embla-carousel-react": "^8.0.0",
     "linkedin-api-client": "^0.3.0",
     "next": "^14.1.0",
     "next-intl": "^3.9.0",
