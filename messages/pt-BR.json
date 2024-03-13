@@ -16,6 +16,29 @@
         "more": "Mostrar mais",
         "less": "Mostrar menos"
       }
+    },
+    "projects": {
+      "crescer": {
+        "description": "<h1>Monitoria Projeto Crescer</h1><image>/images/aula-crescer.png</image><p>Como monitor e posteriormente instrutor também. Participei desse projeto de capacitação de novos desenvolvedores, tive a oportunidade de ajudá-los e ensiná-los sobre conteúdos relacionados ao universo React.</p>",
+        "carousel": {
+          "title": "Monitoria Projeto Crescer",
+          "description": "Projeto de capacitação de novos colaboradores da empresa."
+        }
+      },
+      "crescer-final": {
+        "description": "<h1>Trabalho de Conclusão do Projeto Crescer</h1><image>/images/wall.png</image><p>Participei de um projeto de capacitação de desenvolvedores onde passei 3 meses estudando na empresa, com um total de 30 pessoas.</p><image>/images/model.png</image><li> Aprendi tecnologias e conceitos como POO, Banco de Dados, JavaScript, React, Java entre outros.</li>\n<li> Entreguei aplicações todas as semanas durante 3 meses, como (Rede Social, Pokedex, Uber-like).</li>\n<li> Participei de grupos com 3 pessoas diferentes todas as semanas.</li><p>Como projeto final, onde eu e mais 3 colegas, desenvolvemos um jogo em ReactJS e Java, com detecção de movimentos por câmera chamado (Hole in the wall), onde o jogador tinha que fazer uma certa posição com o corpo para poder passar pelo obstáculo que estava vindo até ele.</p>\n<li> Gerenciei e liderei a parte de frontend do projeto.</li>\n<li> Implementei leitura de movimentos por câmera (segue imagens abaixo).</li>\n<li> Apliquei músicas (.mp3) durante o jogo.</li>\n<li> Experienciei participar de uma banca avaliadora como julgado.</li>",
+        "carousel": {
+          "title": "Trabalho de Conclusão do Projeto Crescer",
+          "description": "Como projeto final, desenvolvemos um jogo em ReactJS e Java, com detecção de movimentos por câmera chamado 'Hole in the wall', onde o jogador tinha que fazer uma certa posição com o corpo para poder passar pelo obstáculo que estava vindo até ele."
+        }
+      },
+      "tcc": {
+        "description": "<h1>Jogo de tabuleiro digital</h1><image>/images/tcc.png</image><p>Desenvolvido como projeto final da faculdade, implementei um jogo de tabuleiro virtual multiplayer online, inspirado no jogo físico Zombicide 2ª Edição. A aplicação possui uma série de recursos, como: movimentar jogadores, recolher e usar itens, rodar dados e matar zumbis.</p>",
+        "carousel": {
+          "title": "Trabalho de Conclusão da Faculdade",
+          "description": "Implementei um jogo de tabuleiro virtual multiplayer online, inspirado no jogo físico Zombicide 2ª Edição. A aplicação possui uma série de recursos, como: movimentar jogadores, recolher e usar itens, rodar dados e matar zumbis."
+        }
+      }
     }
   }
 }
