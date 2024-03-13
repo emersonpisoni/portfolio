@@ -1,7 +1,8 @@
 import ExperienceDivider from '@/components/experience-divider.component'
 import DownloadIcon from '@/components/icons/download.icon';
+import { scrollToUtil } from '@/utils/scrollTo.util';
 import { useTranslations } from 'next-intl';
-import React, { useEffect, useReducer, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 export default function Experience() {
   const t = useTranslations('index.experience');
@@ -25,24 +26,18 @@ export default function Experience() {
     }
   }
 
-  function scrollTo() {
-    const element = document.getElementById('section-experience')
-
-    element?.scrollIntoView({ behavior: 'smooth' })
-  }
-
   function showHideXP(collapsed: boolean) {
     if (ref.current) {
       setCurrentHeight(collapsed ? '400px' : `${ref.current.scrollHeight}px`)
       setCollapsed(collapsed)
-      if (collapsed) scrollTo()
+      if (collapsed) scrollToUtil('section-experience')
     }
   }
 
   return (
     <section id='section-experience' className={`bg-violet-800 w-full py-28 flex flex-col justify-center items-center`}>
       <div className='flex w-1/2 pb-10 items-center gap-4 flex-wrap'>
-        <a className='p-4 rounded text-black font-bold transition-colors bg-violet-100 hover:bg-violet-200 flex justify-center items-center gap-4' href='/documents/cv_emerson_ptbr.pdf' download>CV Português<DownloadIcon width={20} height={20} /> </a>
+        <a className='p-4 rounded text-black font-bold transition-colors bg-violet-100 hover:bg-violet-200 flex justify-center items-center gap-4' href='/documents/cv_emerson_ptbr.pdf' download>Currículo Português<DownloadIcon width={20} height={20} /> </a>
         <a className='p-4 rounded text-black font-bold transition-colors bg-violet-100 hover:bg-violet-200 flex justify-center items-center gap-4' href='/documents/cv_emerson_en.pdf' download>Resume English<DownloadIcon width={20} height={20} /></a>
       </div>
       <div className='relative w-1/2 flex flex-col'>
