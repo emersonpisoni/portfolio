@@ -14,22 +14,15 @@ const config: Config = {
         'space': "url('/images/space.jpg')",
       },
       animation: {
-        zoom: 'zoom 2s cubic-bezier(0.65, 0.05, 0.36, 1) 1',
         blur: 'blur 2s cubic-bezier(0.65, 0.05, 0.36, 1) 1',
         'bg-animate': 'bg-animate 10s infinite',
         'turning-off': 'turning-off .3s linear forwards',
-        'delayed-turning-on': 'turning-on .3s 2s linear forwards',
         'turning-on': 'turning-on .3s linear forwards',
         'turning-on-opacity': 'turning-on-opacity .3s .3s linear forwards',
-        'delayed-turning-on-opacity': 'turning-on-opacity .3s 2.3s linear forwards',
         'border-gradient': 'border-gradient 10s linear infinite',
         'typing': 'typing 3.5s steps(40, end) 2.3s, blink-caret 2s step-end infinite',
       },
       keyframes: {
-        zoom: {
-          '0%': { transform: 'scale(.5)' },
-          '100%': { transform: 'scale(.909)' }
-        },
         blur: {
           '0%': { filter: 'blur(8px)' },
           '100%': { filter: 'blur(0)' }
@@ -75,14 +68,6 @@ const config: Config = {
           "100%": {
             opacity: '0',
             'z-index': '-10'
-          },
-        },
-        "turning-off-opacity": {
-          "0%": {
-            opacity: '0'
-          },
-          "100%": {
-            opacity: '1'
           },
         },
         "border-gradient": {
