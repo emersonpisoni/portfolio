@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import { Roboto_Mono } from "next/font/google";
 import '../globals.css'
+import AnimationContextProvider from "@/contexts/animation.context";
+import ScrollPositionContextProvider, { ScrollPositionContext } from "@/contexts/scrollPosition.context";
 
 export const metadata: Metadata = {
   title: 'Emerson Pisoni',
@@ -25,10 +27,14 @@ export default function RootLayout({
 
   return (
     <html lang={locale} className={robotoMono.className}>
-      <body>
-        <NextIntlClientProvider messages={messages} locale={locale}>
-          {children}
-        </NextIntlClientProvider>
+      <body className="bg-gradient-to-br from-sky-500 via-purple-500 to-orange-500 animate-bg-animate">
+        <ScrollPositionContextProvider>
+          <AnimationContextProvider>
+            <NextIntlClientProvider messages={messages} locale={locale}>
+              {children}
+            </NextIntlClientProvider>
+          </AnimationContextProvider>
+        </ScrollPositionContextProvider>
       </body>
     </html>
   );
