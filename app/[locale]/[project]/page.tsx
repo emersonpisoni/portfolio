@@ -8,7 +8,7 @@ import Link from "next/link";
 import { useContext, useEffect } from "react";
 import { ScrollPositionContext } from "@/contexts/scrollPosition.context";
 
-export function Page({ params }: { params: { blog: string } }) {
+export default function Page({ params }: { params: { project: string } }) {
   const t = useTranslations('index.projects');
   const { setScrollPosition } = useContext(ScrollPositionContext)
 
@@ -24,7 +24,7 @@ export function Page({ params }: { params: { blog: string } }) {
           </Link>
         </header>
         <div className="max-w-[50%] relative flex-col flex">
-          {t.rich(`${params.blog}.description`, {
+          {t.rich(`${params.project}.description`, {
             h1: (chunks) => <h1 className="py-10 font-bold text-6xl ">{chunks}</h1>,
             image: (chunks) => <Image src={`${chunks}`} alt="" sizes="50%" width={0} height={0} className="w-3/4 self-center" />,
             p: (chunks: any) => <p className='py-5  text-xl'>{chunks}</p>,
@@ -35,5 +35,3 @@ export function Page({ params }: { params: { blog: string } }) {
     </Computer>
   )
 }
-
-export default Page
