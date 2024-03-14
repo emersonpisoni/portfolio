@@ -105,7 +105,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
           {slides.map((content, index) => (
             <div className="embla__slide" key={index}>
               <Link href={`${pathname}/${content.routeTo}`}>
-                <div className=' bg-black/10 rounded-[1.8rem]'>
+                <div className=' bg-black/10 rounded-[1.8rem] h-full'>
                   <Image
                     className="embla__slide__img"
                     src={content.image}
