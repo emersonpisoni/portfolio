@@ -6,6 +6,7 @@
     "header": {
       "about": "Sobre",
       "experience": "Experiência",
+      "education": "Formação",
       "projects": "Projetos"
     },
     "experience": {
@@ -17,9 +18,16 @@
         "less": "Mostrar menos"
       }
     },
+    "education": {
+      "badge": {
+        "ulbra": "Bacharelado em Ciências da Computação",
+        "uptime": "Ensino de Inglês como Segundo Idioma",
+        "qi": "Ensino Técnico em informática"
+      }
+    },
     "projects": {
       "crescer": {
-        "description": "<h1>Monitoria Projeto Crescer</h1><image>/images/aula-crescer.png</image><p>Pelo mesmo projeto que ingressei na empresa como aluno, posteriormente tive a oportunidade de atuá-lo nele como monitor e instrutor.</p><p>Inicialmente como monitor, auxiliava os alunos sobre dúvidas em relação ao React.js, corrigia e avaliava aplicações feitas pelos mesmos, mas demandadas pelos instrutores.</p><p>Logo depois tive a chance de participar do projeto como instrutor, onde tinha toda a responsabilidade das tarefas de monitores, mas também demonstrava com algumas aulas para os alunos, alguns conceitos do universo React.js.</p><p>No final dos módulos, participávamos em bancas, para avaliar os alunos que melhor aderiram os conhecimentos da tecnologia.</p><image>/images/aula-crescer2.png</image>",
+        "description": "<h1>Monitoria Projeto Crescer</h1><image>/images/aula-crescer.png</image><p>Pelo mesmo projeto que ingressei na empresa como aluno, posteriormente tive a oportunidade de atuar nele como monitor e instrutor.</p><p>Inicialmente como monitor, auxiliava os alunos sobre dúvidas em relação ao React.js, corrigia e avaliava aplicações feitas pelos mesmos, mas demandadas pelos instrutores.</p><p>Logo depois tive a chance de participar do projeto como instrutor, onde tinha toda a responsabilidade das tarefas de monitores, mas também demonstrava com algumas aulas para os alunos, alguns conceitos do universo React.js.</p><p>No final dos módulos, participávamos em bancas, para avaliar os alunos que melhor aderiram os conhecimentos da tecnologia.</p><image>/images/aula-crescer2.png</image>",
         "carousel": {
           "title": "Monitoria Projeto Crescer",
           "description": "Projeto de capacitação de novos colaboradores da empresa."

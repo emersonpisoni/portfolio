@@ -7,8 +7,9 @@ export default function Header() {
   return (
     <header className='flex [justify-content:safe_center] items-center overflow-y-auto backdrop-blur-md z-10'>
       <Button id='section-about'>{t('header.about')}</Button>
-      <Button id='section-experience'>{t('header.experience')}</Button>
       <Button id='section-projects'>{t('header.projects')}</Button>
+      <Button id='section-education'>{t('header.education')}</Button>
+      <Button id='section-experience'>{t('header.experience')}</Button>
     </header>
   )
 }

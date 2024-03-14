@@ -6,6 +6,7 @@
     "header": {
       "about": "About",
       "experience": "Experience",
+      "education": "Education",
       "projects": "Projects"
     },
     "experience": {
@@ -15,6 +16,13 @@
       "showMoreLessButton": {
         "more": "Show more",
         "less": "Show less"
+      }
+    },
+    "education": {
+      "badge": {
+        "ulbra": "Bachelor's Degree in Computer Science",
+        "uptime": "English as a Second Language Course",
+        "qi": "Technical Education in IT"
       }
     },
     "projects": {
