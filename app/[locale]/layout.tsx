@@ -1,9 +1,13 @@
 import { Metadata } from "next";
-import { NextIntlClientProvider, useMessages } from "next-intl";
+import { NextIntlClientProvider, useMessages, useTranslations } from "next-intl";
 import { Roboto_Mono } from "next/font/google";
 import '../globals.scss'
 import AnimationContextProvider from "@/contexts/animation.context";
 import ScrollPositionContextProvider, { ScrollPositionContext } from "@/contexts/scrollPosition.context";
+import Link from "next/link";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
+import LanguageSwitcher from "@/components/language-switcher.component";
 
 export const metadata: Metadata = {
   title: 'Emerson Pisoni',
@@ -32,6 +36,7 @@ export default function RootLayout({
           <AnimationContextProvider>
             <NextIntlClientProvider messages={messages} locale={locale}>
               {children}
+              <LanguageSwitcher />
             </NextIntlClientProvider>
           </AnimationContextProvider>
         </ScrollPositionContextProvider>

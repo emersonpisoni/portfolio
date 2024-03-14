@@ -37,14 +37,6 @@ export default function Index() {
         </div>
       </>
     </Computer>
-    <div className='flex top-1 right-1 absolute '>
-      {t('switch') !== 'pt-BR' ? <Link locale={'en'} href={'/en'} className='rounded-full bg-white text-black font-bold'>
-        <Image src={'/images/usa-flag.webp'} className='rounded-full' alt='user-image' width={50} height={50} />
-      </Link> :
-        <Link locale={'pt-BR'} href={'/pt-BR'} className='rounded-full bg-white text-black font-bold'>
-          <Image src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Brazilian_flag_icon_round.svg/1200px-Brazilian_flag_icon_round.svg.png' className='rounded-full' alt='user-image' width={50} height={50} />
-        </Link>
-      }
-    </div>
+
   </main>
 }
