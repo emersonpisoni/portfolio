@@ -7,7 +7,8 @@
       "about": "Sobre",
       "experience": "Experiência",
       "education": "Formação",
-      "projects": "Projetos"
+      "projects": "Projetos",
+      "contact": "Contato"
     },
     "experience": {
       "crescer": "<div>Participei de um projeto de capacitação de desenvolvedores onde passei 3 meses estudando na empresa, com um total de 30 pessoas:</div>\n<li> Aprendi tecnologias e conceitos como POO, Banco de Dados, JavaScript, React, Java entre outros.</li>\n<li> Entreguei aplicações todas as semanas durante 3 meses, como: Rede Social, Pokedex, Uber-like.</li>\n<li> Participei de grupos com 3 pessoas diferentes todas as semanas.</li>\n<div>Como projeto final, eu e mais 3 colegas, desenvolvemos um jogo em ReactJS e Java, com detecção de movimentos por câmera chamado Hole in the wall, onde o jogador tinha que fazer uma certa posição com o corpo para poder passar pelo obstáculo que estava vindo até ele.</div>\n<li> Gerenciei e liderei a parte de frontend do projeto.</li>\n<li> Implementei leitura de movimentos por câmera (segue imagens abaixo).</li>\n<li> Apliquei músicas (.mp3) durante o jogo.</li>\n<li> Experienciei participar de uma banca avaliadora como julgado.</li>",
@@ -24,6 +25,9 @@
         "uptime": "Ensino de Inglês como Segundo Idioma",
         "qi": "Ensino Técnico em informática"
       }
+    },
+    "contact": {
+      "title": "Contato"
     },
     "projects": {
       "crescer": {

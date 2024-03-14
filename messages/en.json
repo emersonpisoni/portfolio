@@ -7,7 +7,8 @@
       "about": "About",
       "experience": "Experience",
       "education": "Education",
-      "projects": "Projects"
+      "projects": "Projects",
+      "contact": "Contact"
     },
     "experience": {
       "crescer": "<div>Participated in a developer training project where I spent 3 months studying at the company, with a total of 30 people:</div>\n<li> Learned technologies and concepts such as OOP, Databases, JavaScript, React, Java, among others.</li>\n<li> Delivered applications every week for 3 months, such as: Social Network, Pokedex, Uber-like.</li>\n<li> Participated in groups with 3 different people every week.</li>\n<div>As a final project, where myself and 3 other colleagues, we developed a game in ReactJS and Java, with motion detection by camera called Hole in the wall, where the player had to assume a certain body position to pass through the obstacle that was coming towards him/her.</div>\n<li> Managed and led the frontend part of the project.</li>\n<li> Implemented motion detection by camera (see images below).</li>\n<li> Applied music (.mp3) during the game.</li>\n<li> Experienced participating in an evaluating panel as a judge.</li>",
@@ -24,6 +25,9 @@
         "uptime": "English as a Second Language Course",
         "qi": "Technical Education in IT"
       }
+    },
+    "contact": {
+      "title": "Contact"
     },
     "projects": {
       "crescer": {

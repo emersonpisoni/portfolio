@@ -10,6 +10,7 @@ export default function Header() {
       <Button id='section-projects'>{t('header.projects')}</Button>
       <Button id='section-education'>{t('header.education')}</Button>
       <Button id='section-experience'>{t('header.experience')}</Button>
+      <Button id='section-contact'>{t('header.contact')}</Button>
     </header>
   )
 }

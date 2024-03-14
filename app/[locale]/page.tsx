@@ -4,6 +4,7 @@ import Computer from '@/components/computer.component';
 import Header from '@/components/header.component';
 import { ScrollPositionContext } from '@/contexts/scrollPosition.context';
 import About from '@/sections/about.section';
+import Contact from '@/sections/contact.section';
 import Education from '@/sections/education.section';
 import Experience from '@/sections/experience.section';
 import Projects from '@/sections/projects.section';
@@ -32,6 +33,7 @@ export default function Index() {
           <Projects />
           <Education />
           <Experience />
+          <Contact />
         </div>
       </>
     </Computer>
