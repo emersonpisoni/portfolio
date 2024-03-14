@@ -16,7 +16,7 @@ type EducationDividerType = {
 export default function Education() {
   const t = useTranslations('index.education')
 
-  return <section id='section-education' className="flex flex-col items-center justify-center gap-10 py-24 w-full bg-violet-800 border border-violet-800">
+  return <section id='section-education' className="flex flex-col items-center justify-center gap-10 py-24 w-full bg-gradient-to-b from-violet-700 to-violet-800">
     <div className="w-full flex justify-center gap-10 flex-wrap">
       <EducationDivider docImage="/images/diploma-facul.png" src='/images/ulbra.jpeg' alt='ulbra logo' title="ULBRA" description={t('badge.ulbra')} time="2017 - 2022" />
       <EducationDivider docImage="/images/diploma-ingles.jpeg" src='/images/uptime.jpg' alt='uptime logo' title="UPTIME" description={t('badge.uptime')} time="2019 - 2020" />
@@ -27,14 +27,14 @@ export default function Education() {
 
 function EducationDivider({ src, alt, title, description, time, docImage }: EducationDividerType) {
   return (
-    <div className="flex flex-col justify-center items-center gap-8">
+    <div className="education-divider flex flex-col justify-center items-center gap-8">
       <PictureOnTheWall>
         <Image src={docImage} alt="teste" fill />
       </PictureOnTheWall>
-      <div className="flex items-center rounded border mx-2">
+      <div className="flex items-center rounded border border-violet-400/25 mx-2">
         <Image src={src} alt={alt} width={100} height={100} objectFit="contain" sizes="50%" className="rounded" />
         <div className="px-4">
-          <h1 className="text-4xl font-bold">{title}</h1>
+          <h1 className="text-4xl text-yellow-100 font-bold">{title}</h1>
           <p>{description}</p>
           <p>{time}</p>
         </div>
@@ -44,7 +44,7 @@ function EducationDivider({ src, alt, title, description, time, docImage }: Educ
 }
 
 function PictureOnTheWall({ children }: PropsWithChildren) {
-  return <div className="picture">
+  return <div className="picture animate-frame-shaking">
     <div className="hook"></div>
     <div className="frame">
       <div className="inside">{children}</div>

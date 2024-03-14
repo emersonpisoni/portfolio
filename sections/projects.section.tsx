@@ -39,7 +39,7 @@ export default function Projects() {
   ]
 
   return (
-    <section id='section-projects' className='bg-violet-800 w-full min-h-[calc(100vh-48px)] flex justify-center items-center'>
+    <section id='section-projects' className='bg-gradient-to-b from-violet-600 to-violet-700 w-full min-h-[calc(100vh-48px)] flex justify-center items-center'>
       <EmblaCarousel slides={SLIDES} options={OPTIONS} />
     </section>
   )

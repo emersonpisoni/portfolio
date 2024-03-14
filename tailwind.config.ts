@@ -21,6 +21,7 @@ const config: Config = {
         'turning-on-opacity': 'turning-on-opacity .3s .3s linear forwards',
         'border-gradient': 'border-gradient 10s linear infinite',
         'typing': 'typing 3.5s steps(40, end) 2.3s, blink-caret 2s step-end infinite',
+        'frame-shaking': 'frame-shaking 1s infinite',
       },
       keyframes: {
         blur: {
@@ -86,6 +87,11 @@ const config: Config = {
           '75%': { 'border-color': 'orange' },
           '100%': { 'border-color': 'transparent' },
         },
+        'frame-shaking': {
+          '0%': { 'transform': 'rotate(2deg)' },
+          '50%': { 'transform': 'rotate(-2deg)' },
+          '100%': { 'transform': 'rotate(2deg)' },
+        }
       },
     },
 

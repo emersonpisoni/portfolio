@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import { Roboto_Mono } from "next/font/google";
-import '../globals.css'
+import '../globals.scss'
 import AnimationContextProvider from "@/contexts/animation.context";
 import ScrollPositionContextProvider, { ScrollPositionContext } from "@/contexts/scrollPosition.context";
 
