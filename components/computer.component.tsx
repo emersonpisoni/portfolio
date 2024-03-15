@@ -1,7 +1,7 @@
 'use-client'
 
 import { AnimationContext } from "@/contexts/animation.context";
-import { ScrollPositionContext } from "@/contexts/scrollPosition.context";
+import Image from "next/image";
 import { PropsWithChildren, useContext, useEffect, useState } from "react";
 
 export type TurnOnOffAnimation = {
@@ -40,7 +40,9 @@ export default function Computer({ children, isPcOff }: ComputerProps) {
         </div>
         {children}
       </div >
-      <div onClick={() => onChangeAnimation(!monitorAnimation.isPcOff)} className={`w-4 h-4 ${monitorAnimation.isPcOff ? 'bg-red-500' : 'bg-green-500'} -bottom-0 right-10 absolute rounded-t-full hover:cursor-pointer`}></div>
+      <div onClick={() => onChangeAnimation(!monitorAnimation.isPcOff)} className={`w-5 h-5 ${monitorAnimation.isPcOff ? 'bg-red-500 shadow-red-500' : 'bg-green-500 shadow-green-500'} animate-power-button -bottom-0 right-8 absolute rounded-full hover:cursor-pointer flex justify-center items-center`}>
+        <Image src={'/images/power-button.svg'} alt="power button" width={15} height={0} ></Image>
+      </div>
       <div className='w-2 h-3 bg-white -bottom-0 right-16 absolute rounded-t-full'></div>
       <div className='w-2 h-3 bg-white -bottom-0 right-20 absolute rounded-t-full'></div>
       <div className='w-2 h-3 bg-white -bottom-0 right-24 absolute rounded-t-full'></div>

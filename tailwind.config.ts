@@ -22,6 +22,7 @@ const config: Config = {
         'border-gradient': 'border-gradient 10s linear infinite',
         'typing': 'typing 1.5s steps(16, end) 1.5s forwards, blink-caret 2s step-end infinite',
         'frame-shaking': 'frame-shaking 1s infinite',
+        'power-button': 'power-button 1s infinite',
       },
       keyframes: {
         blur: {
@@ -91,6 +92,11 @@ const config: Config = {
           '0%': { 'transform': 'rotate(2deg)' },
           '50%': { 'transform': 'rotate(-2deg)' },
           '100%': { 'transform': 'rotate(2deg)' },
+        },
+        'power-button': {
+          '0%': { 'box-shadow': '0 0px 10px 3px var(--tw-shadow-color)' },
+          '50%': { 'box-shadow': '0 0px 10px 4px var(--tw-shadow-color)' },
+          '100%': { 'box-shadow': '0 0px 10px 3px var(--tw-shadow-color)' },
         }
       },
     },
