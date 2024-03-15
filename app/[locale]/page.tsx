@@ -10,8 +10,6 @@ import Experience from '@/sections/experience.section';
 import Projects from '@/sections/projects.section';
 import { scrollToUtil } from '@/utils/scrollTo.util';
 import { useTranslations } from 'next-intl';
-import Image from 'next/image';
-import Link from 'next/link';
 import { useContext, useEffect } from 'react';
 
 export default function Index() {

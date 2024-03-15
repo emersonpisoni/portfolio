@@ -20,7 +20,7 @@ const config: Config = {
         'turning-on': 'turning-on .3s linear forwards',
         'turning-on-opacity': 'turning-on-opacity .3s .3s linear forwards',
         'border-gradient': 'border-gradient 10s linear infinite',
-        'typing': 'typing 3.5s steps(40, end) 2.3s, blink-caret 2s step-end infinite',
+        'typing': 'typing 1.5s steps(16, end) 1.5s forwards, blink-caret 2s step-end infinite',
         'frame-shaking': 'frame-shaking 1s infinite',
       },
       keyframes: {
@@ -82,9 +82,9 @@ const config: Config = {
         },
         'blink-caret': {
           '0%': { 'border-color': 'transparent' },
-          '25%': { 'border-color': 'blue' },
+          '25%': { 'border-color': 'white' },
           '50%': { 'border-color': 'transparent' },
-          '75%': { 'border-color': 'orange' },
+          '75%': { 'border-color': 'white' },
           '100%': { 'border-color': 'transparent' },
         },
         'frame-shaking': {
