@@ -2,7 +2,7 @@ import ExperienceDivider from '@/components/experience-divider.component'
 import DownloadIcon from '@/components/icons/download.icon';
 import { scrollToUtil } from '@/utils/scrollTo.util';
 import { useTranslations } from 'next-intl';
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useCallback, useEffect, useRef, useState } from 'react'
 
 export default function Experience() {
   const t = useTranslations('index.experience');
@@ -11,20 +11,21 @@ export default function Experience() {
   const [currentHeight, setCurrentHeight] = useState<string | undefined>('400px')
 
   const showMoreLessText = collapsed ? t('showMoreLessButton.more') : t('showMoreLessButton.less')
+  const resizeWindow = useCallback(
+    () => {
+      if (ref.current) {
+        const height = ref.current?.scrollHeight.toString() + 'px'
+        setCurrentHeight(collapsed ? '400px' : height)
+      }
+    },
+    [collapsed],
+  )
 
   useEffect(() => {
     window.addEventListener('resize', resizeWindow)
 
     return () => window.removeEventListener('resize', resizeWindow)
-  }, [])
-
-  function resizeWindow() {
-    if (ref.current && !collapsed) {
-      const height = ref.current?.scrollHeight.toString() + 'px'
-
-      setCurrentHeight(height)
-    }
-  }
+  }, [resizeWindow])
 
   function showHideXP(collapsed: boolean) {
     if (ref.current) {
