@@ -32,7 +32,7 @@ function EducationDivider({ src, alt, title, description, time, docImage }: Educ
         <Image src={docImage} alt="teste" fill />
       </PictureOnTheWall>
       <div className="flex items-center rounded border border-violet-400/25 mx-2">
-        <Image src={src} alt={alt} width={100} height={100} objectFit="contain" sizes="50%" className="rounded" />
+        <Image src={src} alt={alt} width={100} height={100} sizes="50%" className="rounded" />
         <div className="px-4">
           <h1 className="text-4xl text-yellow-100 font-bold">{title}</h1>
           <p>{description}</p>

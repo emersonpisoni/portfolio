@@ -7,15 +7,11 @@ import { usePathname } from "next/navigation";
 
 export default function LanguageSwitcher() {
   const pathName = usePathname()
-  console.log(pathName);
-
   const t = useTranslations('index')
 
   const redirectedPathName = (locale: any) => {
     if (!pathName) return "/";
     const segments = pathName.split("/");
-    console.log(segments);
-
     segments[1] = locale;
     return segments.join("/");
   };
