@@ -33,8 +33,8 @@ export default function Computer({ children, isPcOff }: ComputerProps) {
   }
 
   return (
-    <div className={`w-screen h-screen scale-[0.909] relative flex justify-center items-center`}>
-      <div className="overflow-auto flex relative w-screen h-dvh items-start bg-black border-[24px] border-black rounded shadow-lg">
+    <div className={`w-screen h-screen scale-[0.9] relative flex justify-center items-center`}>
+      <div id="computer" className="overflow-auto flex w-screen h-dvh items-start bg-black border-[24px] border-black rounded shadow-lg">
         <div className={`${opacityAnimationClassname} flex items-center justify-center w-[calc(100vw-48px)] h-[calc(100dvh-48px)] fixed z-20 bg-black`}>
           <div className={`${turnOnOffAnimationClassname} bg-white`}></div>
         </div>

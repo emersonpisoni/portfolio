@@ -89,9 +89,9 @@ const config: Config = {
           '100%': { 'border-color': 'transparent' },
         },
         'frame-shaking': {
-          '0%': { 'transform': 'rotate(2deg)' },
-          '50%': { 'transform': 'rotate(-2deg)' },
-          '100%': { 'transform': 'rotate(2deg)' },
+          '0%': { 'transform': 'rotate(.5deg)' },
+          '50%': { 'transform': 'rotate(-0.5deg)' },
+          '100%': { 'transform': 'rotate(.5deg)' },
         },
         'power-button': {
           '0%': { 'box-shadow': '0 0px 10px 3px var(--tw-shadow-color)' },
